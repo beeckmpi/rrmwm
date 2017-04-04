@@ -1,0 +1,22 @@
+
+@import '~s-grid/s-grid-settings'
+@import '~s-grid/s-grid-functions'
+
+@import '../../styles/settings'
+
+.todo-item
+  display flex
+  padding rem-calc(10) rem-calc(40) rem-calc(10) rem-calc(10)
+  margin-bottom 10px
+  font-size rem-calc(18)
+  &:hover
+    button
+      visibility visible
+  .delete
+    cursor pointer
+    display inline-block
+  input[type=checkbox]
+    margin-right rem-calc(5)
+    cursor pointer
+.todo-finished
+  text-decoration line-through
